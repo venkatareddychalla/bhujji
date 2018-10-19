@@ -7,7 +7,7 @@ node {
           sh 'package'
     }
     
-    stage('results') {
+    stage('results'){
         archiveArtifacts 'gameoflife-web/target/gameoflife.war'
     }
 
